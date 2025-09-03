@@ -1,0 +1,94 @@
+html,body{
+  width: 100%;
+  min-height: 100svh;
+  background-color: black;
+  color: white;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.card{
+  border: 1px solid white;
+  width: max(16%,300px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.card h3{
+  font-size: 18px;
+}
+.card p{
+  font-size: 12px;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.pagination{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.pagination button{
+  font-size: max(.8vw,14px);
+  padding: 6px;
+  border: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.pagination button:disabled{
+  opacity: .4;
+}
+
+.active {
+  background-color: blue !important;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  justify-self: center;
+}
+.category{
+  font-size: 16px;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+.category:focus{
+  background-color: blue;
+}
+
+.loading {
+  font-size: 40px;
+  justify-self: center;
+  margin-top: 100px;
+}
